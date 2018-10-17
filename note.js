@@ -1,21 +1,12 @@
-// var CreateNote = function(heading, text) {
-//     return {
-//         title: heading,
-//         body: text
-//     }
-// };
-//
-// module.exports.CreateNote = CreateNote;
 (function(exports) {
-  function Note(heading, text) {
-    this.title = heading;
-    this.body = text;
+  function Note(title, body) {
+    this.title = title;
+    this.body = body;
   };
 
   Note.prototype.getBody = function () {
     return this.body;
   };
-  
-  exports.Note = Note;
 
+  exports.Note = Note;
 })(this);

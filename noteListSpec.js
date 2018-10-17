@@ -5,11 +5,18 @@ describe('NoteList', function() {
     assert.isArray(noteList.list);
   });
 
-  describe('can add a note', function() {
+  describe('can create and add a note', function() {
     let note = new Mock('Note', [["body", "message"]]);
     var noteList2 = new NoteList;
     noteList2.createAndStoreNote('message', note)
-    console.log(noteList2.list[0]);
     assert.isTrue(noteList2.list[0].body === 'message');
+  })
+
+  describe('can add a note object', function() {
+    var noteList2 = new NoteList;
+    var note = new Mock('nothing',[['body','florence']])
+    noteList2.addNote(note)
+    assert.isTrue(noteList2.list[0].body === 'florence');
+    assert.isTrue(noteList2.list.includes(note));
   })
 })

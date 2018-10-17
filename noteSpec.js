@@ -12,7 +12,7 @@ describe("Note", function() {
     assert.includesKey(note, "title");
     assert.includesKey(note, "body");
     assert.includesValue(note, "myTitle");
-    assert.includesValue(note, "NotARealMessage");
+    assert.includesValue(note, "myMessage");
   })
 })
 //
@@ -21,7 +21,7 @@ describe("Note", function() {
 //       callback();
 // }
 
-// 
+//
 // describe("Hopefully will group them all", testNoteCreation);
 //
 // describe("This is a new section too!", testNoteCreation);

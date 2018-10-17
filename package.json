@@ -10,5 +10,16 @@
     "javascript"
   ],
   "author": "Laura Jackson",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShinyVerse/TodoNotes.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ShinyVerse/TodoNotes/issues"
+  },
+  "homepage": "https://github.com/ShinyVerse/TodoNotes#readme",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
 }
