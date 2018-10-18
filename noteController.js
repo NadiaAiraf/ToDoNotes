@@ -10,9 +10,5 @@
     thor.innerHTML = this.noteListView.returnHTML()
   };
 
-
   exports.NoteController = NoteController
 })(this)
-
-var a = new NoteController();
-a.thorMethod();
