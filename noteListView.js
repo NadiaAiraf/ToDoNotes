@@ -9,7 +9,7 @@
     text = "<ul>"
     for (var i = 0; i < array.length; i++) {
       singleNoteView = new SingleNoteView(array[i])
-      text = text + "<li><a href='#notes/" + array[i].id + "'>Note " + (array[i].id+1) + "</a> " + singleNoteView.shortenReturnHTML() + "</li>"
+      text += "<li><a href='#notes/" + array[i].id + "'>Note " + (array[i].id+1) + "</a> " + singleNoteView.shortenReturnHTML() + "</li>"
      }
     text = text + "</ul>"
     return text
