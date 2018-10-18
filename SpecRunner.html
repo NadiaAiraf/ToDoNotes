@@ -7,21 +7,19 @@
   </head>
   <body>
     <div id="app"><ul><li>favourite drink: not lemonade</li></ul></div> <br>
-    <div id="currentnote"></div>
 
+    <script src="mock.js"></script>
+    <script src="assert.js"> </script>
+    <script src="describe.js"> </script>
     <script src="note.js"> </script>
     <script src="noteList.js"> </script>
+    <script src="noteSpec.js"> </script>
+    <script src="noteListSpec.js"> </script>
     <script src="noteListView.js"> </script>
+    <script src="noteListViewSpec.js"> </script>
     <script src="noteController.js"></script>
+    <script src="noteControllerSpec.js"></script>
     <script src="singleNoteView.js"></script>
-    <script>
-      var noteList = new NoteList()
-      noteList.createAndStoreNote('beer','favourite drink')
-      noteList.createAndStoreNote('pasta','favourite food')
-      noteList.createAndStoreNote('I love to be playing table tennis and tennis','favourite sport')
-      var noteController = new NoteController(noteList)
-      noteController.thorMethod();
-      noteController.changeUrlToNote();
-    </script>
+    <script src="singleNoteViewSpec.js"></script>
   </body>
 </html>

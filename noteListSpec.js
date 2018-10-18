@@ -12,6 +12,14 @@ describe('NoteList', function() {
     assert.isTrue(noteList2.list[0].body === 'message');
   })
 
+  describe('can create and add a note', function() {
+    var noteList2 = new NoteList;
+    noteList2.createAndStoreNote('heading', 'body')
+    noteList2.createAndStoreNote('heading2', 'body2')
+    assert.isTrue(noteList2.list[0].id === 0);
+    assert.isTrue(noteList2.list[1].id === 1);
+  })
+
   describe('can add a note object', function() {
     var noteList2 = new NoteList;
     var note = new Mock('nothing',[['body','florence']])
