@@ -9,20 +9,27 @@
     <div id="app"><ul><li>favourite drink: not lemonade</li></ul></div> <br>
     <div id="currentnote"></div>
 
+    <form id='text' action="#question">
+      <input id='noteTitle' type="textarea" placeholder="title">
+      <input id='noteBody' type="textarea" placeholder="text">
+      <input type="submit" value='submit'>
+    </form>
+
     <script src="note.js"> </script>
     <script src="noteList.js"> </script>
     <script src="noteListView.js"> </script>
     <script src="noteController.js"></script>
     <script src="singleNoteView.js"></script>
     <script>
-      var noteList = new NoteList()
-      noteList.createAndStoreNote('beer','favourite drink')
-      noteList.createAndStoreNote('pasta','favourite food')
-      noteList.createAndStoreNote('I love to be playing table tennis and tennis','favourite sport')
-      noteList.createAndStoreNote('Ruby is life, Javascript is like a baby eating bolognaise','coding language')
-      var noteController = new NoteController(noteList)
+      // var noteList = new NoteList()
+      // noteList.createAndStoreNote('beer','favourite drink')
+      // noteList.createAndStoreNote('pasta','favourite food')
+      // noteList.createAndStoreNote('I love to be playing table tennis and tennis','favourite sport')
+      // noteList.createAndStoreNote('Ruby is life, Javascript is like a baby eating bolognaise','coding language')
+      var noteController = new NoteController()
       noteController.thorMethod();
       noteController.changeUrlToNote();
+      noteController.submitHandler();
     </script>
   </body>
 </html>

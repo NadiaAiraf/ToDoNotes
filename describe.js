@@ -1,4 +1,4 @@
 var describe = function(message, callback) {
-      document.write(message +"</span></br>" );
+      document.getElementById('test').innerHTML += (message +"</span></br>" );
       callback();
 }
